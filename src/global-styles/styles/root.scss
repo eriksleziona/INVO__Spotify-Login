@@ -3,6 +3,21 @@
 /// For examples see Material Design color system: https://m2.material.io/design/color/the-color-system.html
 
 :root {
-    --color-primary: #5721f2;
-    --color-on-surface: #000;
+  /* Colors */
+  --color-primary: #65d36e;
+  --color-secondary: #445a90;
+  --color-on-surface: #000;
+  --color-black: #000000;
+  --color-grey-700: #292929;
+  --color-grey-500: #444444;
+  --color-grey-300: #bbbbbb;
+  --color-white: #ffffff;
+
+  /* Button hover colors */
+
+  --color-secondary-hover: #3c4f7d;
+
+  /* Rounding */
+  --input-rounding: 50px;
+  --stroke-size: 1px;
 }
