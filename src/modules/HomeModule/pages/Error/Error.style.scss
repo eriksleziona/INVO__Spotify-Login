@@ -1,0 +1,12 @@
+.error-page-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & &__image {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
