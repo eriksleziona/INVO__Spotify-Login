@@ -1,0 +1,64 @@
+.btn {
+  max-height: 57px;
+  width: 100%;
+  padding: 15px 0;
+  background: var(--color-white);
+  text-align: center;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  transition: all 0.2s ease-in-out;
+
+  svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-facebook {
+  border: 1px solid var(--color-secondary);
+  background: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.btn-facebook:hover {
+  background: var(--color-secondary-hover);
+}
+
+.btn-facebook:active {
+  background: var(--color-secondary-pressed);
+}
+
+.btn-apple {
+  border: 1px solid var(--color-grey-800);
+  background: var(--color-grey-800);
+  color: var(--color-white);
+}
+
+.btn-apple:hover {
+  background: var(--color-black);
+}
+.btn-apple:active {
+  background: var(--color-apple-active);
+}
+
+.btn-google {
+  border: 1px solid var(--color-grey-700);
+  color: var(--color-grey-700);
+}
+
+.btn-google:hover {
+  border-color: var(--color-black);
+}
+.btn-google:active {
+  color: rgba(41, 41, 41, 0.5);
+}
