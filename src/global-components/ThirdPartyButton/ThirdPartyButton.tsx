@@ -14,6 +14,10 @@ export const ThirdPartyButton: React.FC<IThirdPartyButton> = ({
   if (company.toLocaleLowerCase() === "apple") {
     classNames = "btn btn-apple";
   }
+
+  if (company.toLocaleLowerCase() === "google") {
+    classNames = "btn btn-google";
+  }
   return (
     <button type="button" className={classNames}>
       <span>{icon}</span>Sign up with {company}
