@@ -1,3 +1,11 @@
 .title-container {
   text-align: center;
+
+  & &__heading {
+    color: var(--color-black);
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    font-size: 27px;
+  }
 }
