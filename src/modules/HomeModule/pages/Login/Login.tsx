@@ -3,12 +3,11 @@ import { ThirdPartyButton, Title } from "@/global-components";
 import { FaFacebook, FaApple } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import "./Login.style.scss";
-import { ButtonContainer, Separator } from "../../components";
+import { ButtonContainer, Separator, LoginForm } from "../../components";
 export const Login = () => {
   return (
     <main className="login-container">
       <Title msg="Spotify" />
-
       <ButtonContainer>
         <p className="login-container__subtitle">
           Please sign in to Spotify to continue.
@@ -18,6 +17,7 @@ export const Login = () => {
         <ThirdPartyButton icon={<FcGoogle />} company="google" />
       </ButtonContainer>
       <Separator fullWidth={false} />
+      <LoginForm />
     </main>
   );
 };
