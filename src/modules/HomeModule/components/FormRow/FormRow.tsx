@@ -6,6 +6,7 @@ export const FormRow: React.FC<IFormRow> = ({
   labelText,
   name,
   additionalText,
+  handleChange,
 }) => {
   return (
     <div className="form-row-container">
@@ -16,7 +17,10 @@ export const FormRow: React.FC<IFormRow> = ({
         type={type}
         name={name}
         className="form-row-container__input"
+        id={name}
         placeholder={labelText}
+        onChange={handleChange}
+        required
       />
       {additionalText && (
         <p className="form-row-container__additional">

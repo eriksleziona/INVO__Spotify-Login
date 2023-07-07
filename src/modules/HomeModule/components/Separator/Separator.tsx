@@ -5,9 +5,7 @@ export const Separator: React.FC<ISeparator> = ({ fullWidth }) => {
   return (
     <>
       {fullWidth ? (
-        <div className="separator-container">
-          <div className="separator-container__line"></div>
-        </div>
+        <div className="separator-longline"></div>
       ) : (
         <div className="separator-container">
           <div className="separator-container__line"></div>

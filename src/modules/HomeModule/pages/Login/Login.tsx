@@ -19,7 +19,7 @@ export const Login: React.FC = () => {
       <Separator fullWidth={false} />
       <LoginForm />
 
-      {/* <Separator fullWidth={true} /> */}
+      <Separator fullWidth={true} />
     </main>
   );
 };
