@@ -1,5 +1,6 @@
 .button-container {
   display: grid;
+  max-width: 442px;
   grid-template-rows: 1fr;
   gap: 18px;
 }

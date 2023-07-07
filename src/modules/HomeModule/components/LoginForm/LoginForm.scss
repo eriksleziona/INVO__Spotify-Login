@@ -1,0 +1,9 @@
+.login-form-container {
+  max-width: 442px;
+
+  & &__form {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 16px;
+  }
+}

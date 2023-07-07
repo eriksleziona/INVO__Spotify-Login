@@ -4,7 +4,7 @@ import { FaFacebook, FaApple } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import "./Login.style.scss";
 import { ButtonContainer, Separator, LoginForm } from "../../components";
-export const Login = () => {
+export const Login: React.FC = () => {
   return (
     <main className="login-container">
       <Title msg="Spotify" />
@@ -18,6 +18,8 @@ export const Login = () => {
       </ButtonContainer>
       <Separator fullWidth={false} />
       <LoginForm />
+
+      {/* <Separator fullWidth={true} /> */}
     </main>
   );
 };
