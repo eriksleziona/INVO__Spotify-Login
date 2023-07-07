@@ -1,0 +1,22 @@
+.login-form-container {
+  max-width: 442px;
+
+  & &__form {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 16px;
+  }
+
+  & &__RememberAndSubmit {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & &__remember {
+
+    display: flex;
+    flex-flow: row;
+    gap: 18px;
+    align-items: baseline;
+  }
+}

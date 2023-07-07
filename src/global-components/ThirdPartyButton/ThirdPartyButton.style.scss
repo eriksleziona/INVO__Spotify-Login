@@ -1,5 +1,6 @@
 .btn {
   max-height: 57px;
+  max-width: 435px;
   width: 100%;
   padding: 15px 0;
   background: var(--color-white);
@@ -15,8 +16,7 @@
   transition: all 0.2s ease-in-out;
 
   svg {
-    width: 22px;
-    height: 22px;
+    font-size: 28px;
   }
 }
 
