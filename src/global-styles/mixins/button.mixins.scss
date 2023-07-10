@@ -1,0 +1,17 @@
+@mixin btn-mixin {
+  max-height: 57px;
+  max-width: 435px;
+  width: 100%;
+  padding: 15px 0;
+  background: var(--color-white);
+  text-align: center;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  transition: all 0.2s ease-in-out;
+}

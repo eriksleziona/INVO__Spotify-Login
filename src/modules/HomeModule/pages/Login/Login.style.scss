@@ -1,3 +1,5 @@
+@import "/src/global-styles/mixins/button.mixins.scss";
+
 .login-container {
   max-width: 442px;
   margin: 0 auto;
@@ -10,5 +12,23 @@
     font-size: 1rem;
     font-weight: 700;
     color: var(--color-black);
+  }
+
+  & &__sign-title {
+    margin: 0;
+    text-align: center;
+
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  & &__btn-sign {
+    margin-top: 24px;
+    text-decoration: none;
+    @include btn-mixin;
+    padding: 19px 0;
+    border: 1px solid var(--color-black);
+    color: var(--color-google-hover);
+    font-weight: 700;
   }
 }

@@ -6,6 +6,8 @@ export const FormRow: React.FC<IFormRow> = ({
   labelText,
   name,
   additionalText,
+  additionalUnderline,
+  placeholderText,
   handleChange,
 }) => {
   return (
@@ -18,13 +20,20 @@ export const FormRow: React.FC<IFormRow> = ({
         name={name}
         className="form-row-container__input"
         id={name}
-        placeholder={labelText}
+        placeholder={placeholderText ? placeholderText : labelText}
         onChange={handleChange}
         required
       />
       {additionalText && (
-        <p className="form-row-container__additional">
-          Do not you remember the password?
+        <p
+          className="form-row-container__additional"
+          style={
+            additionalUnderline
+              ? { textDecoration: "underline" }
+              : { textDecoration: "none" }
+          }
+        >
+          {additionalText}
         </p>
       )}
     </div>

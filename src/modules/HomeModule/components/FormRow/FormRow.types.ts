@@ -3,5 +3,7 @@ export interface IFormRow {
   type: string;
   labelText: string;
   additionalText?: string;
+  placeholderText?: string;
+  additionalUnderline?: boolean;
   handleChange?: React.ChangeEventHandler<HTMLInputElement>;
 }

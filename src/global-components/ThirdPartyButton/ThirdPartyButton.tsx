@@ -20,7 +20,7 @@ export const ThirdPartyButton: React.FC<IThirdPartyButton> = ({
   }
   return (
     <button type="button" className={classNames}>
-      <span>{icon}</span>Sign up with {company}
+      {icon && <span>{icon}</span>}Sign up with {company}
     </button>
   );
 };
