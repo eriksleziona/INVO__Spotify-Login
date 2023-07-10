@@ -1,4 +1,4 @@
 export interface IThirdPartyButton {
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
   company: string;
 }

@@ -10,6 +10,7 @@ export const LoginForm: React.FC = () => {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     console.log(e.target.name);
+    /* #TODO Implementing state updating and Connecting to the redux store */
   };
   return (
     <div className="login-form-container">
