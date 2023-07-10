@@ -1,0 +1,14 @@
+.register-form-container {
+  display: flex;
+  flex-direction: column;
+
+  & &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  & &__title {
+    margin: 0;
+    text-align: center;
+  }
+}

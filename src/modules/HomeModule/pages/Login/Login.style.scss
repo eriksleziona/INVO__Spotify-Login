@@ -28,7 +28,7 @@
     @include btn-mixin;
     padding: 19px 0;
     border: 1px solid var(--color-black);
-    color: #848484;
+    color: var(--color-google-hover);
     font-weight: 700;
   }
 }

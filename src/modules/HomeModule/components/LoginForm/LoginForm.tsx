@@ -26,6 +26,7 @@ export const LoginForm: React.FC = () => {
           name="password"
           labelText="Password"
           handleChange={handleChange}
+          additionalUnderline={true}
           additionalText=" Do not you remember the password?"
         />
         <div className="login-form-container__RememberAndSubmit">

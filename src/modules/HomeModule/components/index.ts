@@ -3,3 +3,4 @@ export * from "./Separator/Separator";
 export * from "./FormRow/FormRow";
 export * from "./LoginForm/LoginForm";
 export * from "./SubmitButton/SubmitButton";
+export * from "./RegisterForm/RegisterForm";
