@@ -6,6 +6,7 @@ export const LoginForm: React.FC = () => {
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
     console.log("Submit");
+    console.log(e);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -36,6 +37,7 @@ export const LoginForm: React.FC = () => {
               name="remember"
               id="remember"
               onChange={handleChange}
+              /* #TODO  Implementing the Custom Checkbox. */
             />
             <label htmlFor="remember">Remember</label>
           </div>

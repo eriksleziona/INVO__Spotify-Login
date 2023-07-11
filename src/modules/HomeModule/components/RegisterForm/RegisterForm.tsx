@@ -1,8 +1,10 @@
-import React from "react";
+import React, { FormEvent } from "react";
 import "./RegisterForm.style.scss";
-import { FormRow } from "../FormRow/FormRow";
+import { FormRow, GenderForm } from "@/modules/HomeModule/components";
+
 const RegisterForm: React.FC = () => {
-  const handleSubmit = () => {
+  const handleSubmit = (e: React.SyntheticEvent) => {
+    e.preventDefault();
     console.log("submit");
   };
 
@@ -36,6 +38,8 @@ const RegisterForm: React.FC = () => {
           placeholderText="Enter a profile name."
           additionalText="This appears on your profile."
         />
+        <div>Placeholder Date Row</div>
+        <GenderForm />
       </form>
     </div>
   );
