@@ -1,11 +1,20 @@
-import React, { FormEvent } from "react";
+import React, { ChangeEvent } from "react";
 import "./RegisterForm.style.scss";
-import { FormRow, GenderForm } from "@/modules/HomeModule/components";
+import {
+  FormRow,
+  GenderForm,
+  Acknowledgement,
+  SubmitButton,
+} from "@/modules/HomeModule/components";
 
-const RegisterForm: React.FC = () => {
+export const RegisterForm: React.FC = () => {
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
     console.log("submit");
+  };
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    console.log(e.target.value);
   };
 
   return (
@@ -19,17 +28,20 @@ const RegisterForm: React.FC = () => {
           name="email"
           labelText="What’s your email?"
           placeholderText="Enter you email."
+          handleChange={handleChange}
         />
         <FormRow
           type="email"
           name="confirmemail"
           labelText="Confirm your email"
           placeholderText="Enter your email again."
+          handleChange={handleChange}
         />
         <FormRow
           type="password"
           name="password"
           labelText="Create a password"
+          handleChange={handleChange}
         />
         <FormRow
           type="text"
@@ -37,11 +49,28 @@ const RegisterForm: React.FC = () => {
           labelText="What should we call you?"
           placeholderText="Enter a profile name."
           additionalText="This appears on your profile."
+          handleChange={handleChange}
         />
         <div>Placeholder Date Row</div>
-        <GenderForm />
+        <GenderForm handleChange={handleChange} />
+        <Acknowledgement handleChange={handleChange} />
+        <p className="register-form-container__conditions">
+          By clicking on sign-up. you agree to Sporify’s
+          <a href="#" className="register-form-container__conditions-link">
+            Terms and Conditions of Use
+          </a>
+          .
+        </p>
+        <p className="register-form-container__privacy">
+          To learn more about how. Spotify collects, uses, shares and protects
+          your personal data, please see
+          <a href="#" className="register-form-container__privacy-link">
+            Spotify’s Privacy Policy
+          </a>
+          .
+        </p>
+        <SubmitButton />
       </form>
     </div>
   );
 };
-export default RegisterForm;

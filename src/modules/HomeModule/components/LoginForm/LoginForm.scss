@@ -1,6 +1,8 @@
+@import "/src/global-styles/mixins/checkbox.mixin.scss";
+
 .login-form-container {
   max-width: 442px;
-
+  @include custom-checkbox;
   & &__form {
     display: grid;
     grid-template-rows: 1fr;
@@ -16,6 +18,5 @@
     display: flex;
     flex-flow: row;
     gap: 18px;
-    align-items: baseline;
   }
 }
