@@ -69,7 +69,9 @@ export const RegisterForm: React.FC = () => {
           </a>
           .
         </p>
-        <SubmitButton />
+        <div className="register-form-container__btn">
+          <SubmitButton />
+        </div>
       </form>
     </div>
   );

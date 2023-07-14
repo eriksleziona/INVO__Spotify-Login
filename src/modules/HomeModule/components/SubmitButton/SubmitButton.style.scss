@@ -5,3 +5,16 @@
   border: none;
   font-weight: 700;
 }
+
+.btn-submit:hover {
+  cursor: pointer;
+}
+
+.btn-submit:active {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    var(--color-primary);
+}

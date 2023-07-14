@@ -37,7 +37,6 @@ export const LoginForm: React.FC = () => {
               name="remember"
               id="remember"
               onChange={handleChange}
-              /* #TODO  Implementing the Custom Checkbox. */
             />
             <label htmlFor="remember">Remember</label>
           </div>

@@ -4,6 +4,7 @@ import React from "react";
 import { ButtonContainer, Separator, RegisterForm } from "../../components";
 import { FaFacebook } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
+import { Link } from "react-router-dom";
 export const Register: React.FC = () => {
   return (
     <main className="register-container">
@@ -17,6 +18,9 @@ export const Register: React.FC = () => {
       </ButtonContainer>
       <Separator fullWidth={false} />
       <RegisterForm />
+      <p className="register-container__footer">
+        Have an account? <Link to={"/"}>Log in</Link>.
+      </p>
     </main>
   );
 };

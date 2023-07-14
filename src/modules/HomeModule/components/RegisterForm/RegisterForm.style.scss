@@ -34,4 +34,9 @@
     color: var(--color-primary);
     text-decoration: none;
   }
+
+  & &__btn {
+    display: flex;
+    justify-content: center;
+  }
 }
