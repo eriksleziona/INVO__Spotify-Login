@@ -5,7 +5,9 @@ import { IFormDateRow } from "./FormDateRow.types";
 export const FormDateRow: React.FC<IFormDateRow> = ({ handleChange }) => {
   return (
     <div className="form-date-row-container">
-      <p>What’s your date of birth</p>
+      <p className="form-date-row-container__label">
+        What’s your date of birth
+      </p>
       <div className="form-date-row-container__row">
         <div className="form-date-row-container__row-item">
           <label htmlFor="month">Month</label>
@@ -37,6 +39,7 @@ export const FormDateRow: React.FC<IFormDateRow> = ({ handleChange }) => {
             name="day"
             id="day"
             className="form-date-row-container__day-year"
+            onChange={handleChange}
           />
         </div>
         <div className="form-date-row-container__row-item">
@@ -47,6 +50,7 @@ export const FormDateRow: React.FC<IFormDateRow> = ({ handleChange }) => {
             id="year"
             className="form-date-row-container__day-year"
             placeholder="YYY "
+            onChange={handleChange}
           />
         </div>
       </div>

@@ -15,10 +15,18 @@
 
   & &__select select {
     background: transparent;
-    padding: 20px 80px 19px 32px;
+    width: 189px;
+
+    padding: 20px 0 19px 32px;
     border-radius: 50px;
     -webkit-appearance: none;
-    //color: var(--color-google-hover);
+  }
+
+  & &__label {
+    margin: 0;
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: 700;
   }
 
   & &__select {
