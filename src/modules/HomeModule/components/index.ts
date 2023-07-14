@@ -6,3 +6,4 @@ export * from "./SubmitButton/SubmitButton";
 export * from "./RegisterForm/RegisterForm";
 export * from "./GenderForm/GenderForm";
 export * from "./Acknowledgement/Acknowledgement";
+export * from "./FormDateRow/FormDateRow";

@@ -1,0 +1,38 @@
+.form-date-row-container {
+  & &__row {
+    display: flex;
+    gap: 12px;
+  }
+
+  & &__row-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    input {
+      width: 70%;
+    }
+  }
+
+  & &__select select {
+    background: transparent;
+    padding: 20px 80px 19px 32px;
+    border-radius: 50px;
+    -webkit-appearance: none;
+    //color: var(--color-google-hover);
+  }
+
+  & &__select {
+    overflow: hidden;
+    background: url("/public/icons/right-arrow-52.png") no-repeat #ffffff;
+    background-position: 85% 50%;
+  }
+
+  & &__month {
+    border-radius: 50px;
+  }
+
+  & &__day-year {
+    padding: 20px 0 19px 32px;
+    border-radius: 50px;
+  }
+}
