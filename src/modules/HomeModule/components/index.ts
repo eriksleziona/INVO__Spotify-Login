@@ -5,3 +5,4 @@ export * from "./LoginForm/LoginForm";
 export * from "./SubmitButton/SubmitButton";
 export * from "./RegisterForm/RegisterForm";
 export * from "./GenderForm/GenderForm";
+export * from "./Acknowledgement/Acknowledgement";

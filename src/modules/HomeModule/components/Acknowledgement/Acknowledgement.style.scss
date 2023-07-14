@@ -1,0 +1,14 @@
+@import "/src/global-styles/mixins/checkbox.mixin.scss";
+
+.acknowledgement-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 19px;
+  align-items: center;
+  @include custom-checkbox;
+
+  & &__label {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

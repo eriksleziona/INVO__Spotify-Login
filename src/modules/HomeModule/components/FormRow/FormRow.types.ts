@@ -5,5 +5,5 @@ export interface IFormRow {
   additionalText?: string;
   placeholderText?: string;
   additionalUnderline?: boolean;
-  handleChange?: React.ChangeEventHandler<HTMLInputElement>;
+  handleChange: React.ChangeEventHandler<HTMLInputElement>;
 }

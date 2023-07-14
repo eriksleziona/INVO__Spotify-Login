@@ -11,4 +11,17 @@
     color: var(--color-black);
     font-size: 36px;
   }
+
+  & &__footer {
+    margin: 0;
+    text-align: center;
+    color: var(--color-black);
+    font-size: 16px;
+    font-weight: 600;
+
+    a {
+      color: var(--color-primary);
+      font-weight: 500;
+    }
+  }
 }
