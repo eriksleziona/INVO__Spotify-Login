@@ -5,6 +5,7 @@ import {
   GenderForm,
   Acknowledgement,
   SubmitButton,
+  FormDateRow,
 } from "@/modules/HomeModule/components";
 
 export const RegisterForm: React.FC = () => {
@@ -13,7 +14,9 @@ export const RegisterForm: React.FC = () => {
     console.log("submit");
   };
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  ) => {
     console.log(e.target.value);
   };
 
@@ -51,7 +54,7 @@ export const RegisterForm: React.FC = () => {
           additionalText="This appears on your profile."
           handleChange={handleChange}
         />
-        <div>Placeholder Date Row</div>
+        <FormDateRow handleChange={handleChange} />
         <GenderForm handleChange={handleChange} />
         <Acknowledgement handleChange={handleChange} />
         <p className="register-form-container__conditions">
