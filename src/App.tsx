@@ -1,4 +1,5 @@
 import React from "react";
+import "./firebase/firebase";
 import { Login, Error, Register } from "@modules";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
