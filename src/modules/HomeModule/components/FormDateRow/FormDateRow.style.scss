@@ -1,6 +1,9 @@
 .form-date-row-container {
   & &__row {
-    display: flex;
+    /* display: flex; */
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: minmax(75px, 189px) auto auto;
     gap: 12px;
   }
 
@@ -15,9 +18,9 @@
 
   & &__select select {
     background: transparent;
-    width: 189px;
-
-    padding: 20px 0 19px 32px;
+    max-width: 189px;
+    width: 100%;
+    padding: 20px 0 19px 24px;
     border-radius: 50px;
     -webkit-appearance: none;
   }
